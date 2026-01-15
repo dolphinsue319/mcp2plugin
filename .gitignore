@@ -36,9 +36,17 @@ uv.lock
 # IDE
 .idea/
 .vscode/
+.cursor/
 *.swp
 *.swo
 *~
+
+# AI Assistants
+.agent/
+.claude/
+.gemini/
+AGENTS.md
+CLAUDE.md
 
 # OS
 .DS_Store
