@@ -1,0 +1,19 @@
+{
+  "name": "gemini-cli",
+  "description": "Integrate with Gemini CLI for large-scale file analysis, secure code execution, and advanced context control using Google's powerful tools.",
+  "version": "1.0.0",
+  "author": {
+    "name": "context"
+  },
+  "homepage": "https://github.com/jamubc/gemini-mcp-tool",
+  "repository": "https://github.com/jamubc/gemini-mcp-tool",
+  "mcpServers": {
+    "gemini-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-gemini-cli"
+      ]
+    }
+  }
+}

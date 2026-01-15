@@ -18,6 +18,13 @@
       "description": "Break down complex problems with Sequential Thinking, a structured tool and step by step math solver for dynamic, reflective solutions.",
       "category": "mcp",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking"
+    },
+    {
+      "name": "gemini-cli",
+      "source": "./plugins/gemini-cli",
+      "description": "Integrate with Gemini CLI for large-scale file analysis, secure code execution, and advanced context control using Google's powerful tools.",
+      "category": "mcp",
+      "homepage": "https://github.com/jamubc/gemini-mcp-tool"
     }
   ]
 }
