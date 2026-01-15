@@ -16,19 +16,12 @@
 - Python 3.12+
 - uv 或 pip
 
-### 使用 uv 安裝
-
 ```bash
+git clone <repo-url>
 cd mcp2skill
-uv pip install .
 ```
 
-### 使用 pip 安裝
-
-```bash
-cd mcp2skill
-pip install .
-```
+使用 `uv run` 可直接執行，無需額外安裝步驟。
 
 ## 環境設定
 
@@ -58,7 +51,7 @@ GEMINI_API_KEY=your-api-key-here
 在使用前，先初始化 marketplace：
 
 ```bash
-mcp2plugin init
+uv run mcp2plugin init
 ```
 
 這會建立以下結構：
@@ -73,7 +66,7 @@ mcp2plugin init
 可自訂 marketplace 名稱和擁有者：
 
 ```bash
-mcp2plugin init --name "my-plugins" --owner "username"
+uv run mcp2plugin init --name "my-plugins" --owner "username"
 ```
 
 ### 轉換 MCP 為 Plugin
@@ -81,13 +74,13 @@ mcp2plugin init --name "my-plugins" --owner "username"
 從 fastmcp.me 轉換：
 
 ```bash
-mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix
+uv run mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix
 ```
 
 從 smithery.ai 轉換：
 
 ```bash
-mcp2plugin convert https://smithery.ai/server/slack
+uv run mcp2plugin convert https://smithery.ai/server/slack
 ```
 
 #### 選項
@@ -97,10 +90,10 @@ mcp2plugin convert https://smithery.ai/server/slack
 
 ```bash
 # 指定輸出目錄
-mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix -o /path/to/output
+uv run mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix -o /path/to/output
 
 # 停用 LLM 增強
-mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix --no-llm
+uv run mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix --no-llm
 ```
 
 ### 查看 MCP 資訊
@@ -108,7 +101,7 @@ mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix --no-llm
 在轉換前，可先查看 MCP 的詳細資訊：
 
 ```bash
-mcp2plugin info https://fastmcp.me/MCP/Details/217/repomix
+uv run mcp2plugin info https://fastmcp.me/MCP/Details/217/repomix
 ```
 
 輸出包含：
@@ -123,13 +116,13 @@ mcp2plugin info https://fastmcp.me/MCP/Details/217/repomix
 ### 列出已轉換的 Plugins
 
 ```bash
-mcp2plugin list
+uv run mcp2plugin list
 ```
 
 指定 marketplace 目錄：
 
 ```bash
-mcp2plugin list -m /path/to/marketplace
+uv run mcp2plugin list -m /path/to/marketplace
 ```
 
 ## 在 Claude Code 中使用
@@ -167,14 +160,14 @@ mcp2plugin list -m /path/to/marketplace
 cd ~/my-plugins
 
 # 2. 初始化 marketplace
-mcp2plugin init --name "my-mcp-plugins"
+uv run mcp2plugin init --name "my-mcp-plugins"
 
 # 3. 轉換想要的 MCP
-mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix
-mcp2plugin convert https://smithery.ai/server/slack
+uv run mcp2plugin convert https://fastmcp.me/MCP/Details/217/repomix
+uv run mcp2plugin convert https://smithery.ai/server/slack
 
 # 4. 查看已轉換的 plugins
-mcp2plugin list
+uv run mcp2plugin list
 
 # 5. 在 Claude Code 中使用
 # /plugin marketplace add ~/my-plugins
