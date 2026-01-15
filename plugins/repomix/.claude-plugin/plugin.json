@@ -12,7 +12,8 @@
       "command": "npx",
       "args": [
         "-y",
-        "mcp-server-repomix"
+        "repomix",
+        "--mcp"
       ]
     }
   }
