@@ -17,8 +17,8 @@
 - uv 或 pip
 
 ```bash
-git clone <repo-url>
-cd mcp2skill
+git clone https://github.com/dolphinsue319/mcp2plugin.git
+cd mcp2plugin
 ```
 
 使用 `uv run` 可直接執行，無需額外安裝步驟。
@@ -132,13 +132,13 @@ uv run mcp2plugin list -m /path/to/marketplace
 在 Claude Code 中執行：
 
 ```
-/plugin marketplace add /path/to/marketplace
+/plugin marketplace add dolphinsue319/mcp2plugin
 ```
 
-例如：
+或使用本地路徑：
 
 ```
-/plugin marketplace add /Users/username/mcp2skill
+/plugin marketplace add /path/to/mcp2plugin
 ```
 
 ### 步驟 2：安裝 Plugin
@@ -170,9 +170,8 @@ uv run mcp2plugin convert https://smithery.ai/server/slack
 uv run mcp2plugin list
 
 # 5. 在 Claude Code 中使用
-# /plugin marketplace add ~/my-plugins
-# /plugin install repomix@my-mcp-plugins
-# /plugin install slack@my-mcp-plugins
+# /plugin marketplace add dolphinsue319/mcp2plugin
+# /plugin install repomix@mcp2plugin-marketplace
 ```
 
 ## 支援的 URL 格式
