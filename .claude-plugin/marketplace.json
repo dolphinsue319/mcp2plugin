@@ -11,6 +11,13 @@
       "description": "Optimize your codebase for AI with Repomix—transform, compress, and secure repos for easier analysis with modern AI tools.",
       "category": "mcp",
       "homepage": "https://github.com/yamadashy/repomix"
+    },
+    {
+      "name": "sequential-thinking",
+      "source": "./plugins/sequential-thinking",
+      "description": "Break down complex problems with Sequential Thinking, a structured tool and step by step math solver for dynamic, reflective solutions.",
+      "category": "mcp",
+      "homepage": "https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking"
     }
   ]
 }

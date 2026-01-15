@@ -1,0 +1,19 @@
+{
+  "name": "sequential-thinking",
+  "description": "Break down complex problems with Sequential Thinking, a structured tool and step by step math solver for dynamic, reflective solutions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "context"
+  },
+  "homepage": "https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking",
+  "repository": "https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking",
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-sequential-thinking"
+      ]
+    }
+  }
+}
