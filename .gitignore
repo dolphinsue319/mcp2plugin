@@ -57,6 +57,3 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Generated plugins (keep directory but ignore contents except .gitkeep)
-plugins/*
-!plugins/.gitkeep

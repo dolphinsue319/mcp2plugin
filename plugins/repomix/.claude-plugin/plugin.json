@@ -1,0 +1,19 @@
+{
+  "name": "repomix",
+  "description": "Optimize your codebase for AI with Repomix—transform, compress, and secure repos for easier analysis with modern AI tools.",
+  "version": "1.0.0",
+  "author": {
+    "name": "context"
+  },
+  "homepage": "https://github.com/yamadashy/repomix",
+  "repository": "https://github.com/yamadashy/repomix",
+  "mcpServers": {
+    "repomix": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-repomix"
+      ]
+    }
+  }
+}
