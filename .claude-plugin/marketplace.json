@@ -1,0 +1,16 @@
+{
+  "name": "mcp2plugin-marketplace",
+  "description": "Converted MCP servers as Claude Code plugins",
+  "owner": {
+    "name": "kedia"
+  },
+  "plugins": [
+    {
+      "name": "repomix",
+      "source": "./plugins/repomix",
+      "description": "Optimize your codebase for AI with Repomix—transform, compress, and secure repos for easier analysis with modern AI tools.",
+      "category": "mcp",
+      "homepage": "https://github.com/yamadashy/repomix"
+    }
+  ]
+}
