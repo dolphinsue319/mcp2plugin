@@ -25,6 +25,13 @@
       "description": "Integrate with Gemini CLI for large-scale file analysis, secure code execution, and advanced context control using Google's powerful tools.",
       "category": "mcp",
       "homepage": "https://github.com/jamubc/gemini-mcp-tool"
+    },
+    {
+      "name": "docs-crawler",
+      "source": "./plugins/docs-crawler",
+      "description": "Query documentation using semantic search via Gemini File Search",
+      "category": "mcp",
+      "homepage": "https://github.com/dolphinsue319/docs_crawler"
     }
   ]
 }

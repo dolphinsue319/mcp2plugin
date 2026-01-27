@@ -1,0 +1,16 @@
+{
+  "name": "docs-crawler",
+  "description": "Query documentation using semantic search via Gemini File Search. Provides list_stores and query_docs tools.",
+  "version": "1.0.0",
+  "author": {
+    "name": "kedia"
+  },
+  "homepage": "https://github.com/dolphinsue319/docs_crawler",
+  "repository": "https://github.com/dolphinsue319/docs_crawler",
+  "mcpServers": {
+    "docs-crawler": {
+      "type": "http",
+      "url": "https://docs-mcp.incandgold.cc/mcp"
+    }
+  }
+}
