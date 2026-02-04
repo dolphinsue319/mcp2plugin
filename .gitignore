@@ -46,7 +46,6 @@ uv.lock
 .claude/
 .gemini/
 AGENTS.md
-CLAUDE.md
 
 # OS
 .DS_Store
