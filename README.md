@@ -135,6 +135,12 @@ uv run mcp2plugin list -m /path/to/marketplace
 /plugin marketplace add dolphinsue319/mcp2plugin
 ```
 
+或使用遠端 API：
+
+```
+/plugin marketplace add https://marketplace.incandgold.cc
+```
+
 或使用本地路徑：
 
 ```
@@ -227,6 +233,18 @@ marketplace-root/
   }
 }
 ```
+
+## Marketplace API
+
+Marketplace 也提供 HTTP API 供遠端存取：
+
+| 端點 | 說明 |
+|------|------|
+| `GET /` | 返回 marketplace.json |
+| `GET /plugins` | 返回所有 plugin 名稱列表 |
+| `GET /plugins/:name` | 返回特定 plugin 的 plugin.json |
+
+API URL: https://marketplace.incandgold.cc
 
 ## 授權
 
